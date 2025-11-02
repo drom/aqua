@@ -1,0 +1,31 @@
+/**
+ * Main styles for AquaDrom gallery
+ * Modular CSS architecture following SOLID principles
+ * 
+ * Load order:
+ * 1. Variables (design tokens)
+ * 2. Base styles (reset, typography)
+ * 3. Layout (structure)
+ * 4. Components (specific UI elements)
+ * 5. Themes (dark mode)
+ */
+
+/* === 1. Variables & Design Tokens === */
+@import url('variables.css');
+
+/* === 2. Base Styles === */
+@import url('base.css');
+
+/* === 3. Layout === */
+@import url('layout.css');
+
+/* === 4. Components === */
+@import url('components/header.css');
+@import url('components/gallery.css');
+@import url('components/lightbox.css');
+@import url('components/blog.css');
+@import url('components/footer.css');
+@import url('components/about.css');
+
+/* === 5. Themes === */
+@import url('themes/dark-mode.css');

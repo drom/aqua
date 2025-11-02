@@ -1,0 +1,22 @@
+<!doctype html>
+<title>AQUA</title>
+<notebook theme="near-midnight">
+<script id="3" type="module">
+  const darkMode = true; // view(Inputs.toggle({label: 'Dark Mode', value: true}));
+</script>
+<script type="text/html">
+  <div class="container">
+  <h1>AquaDrom</h1>
+  World in watercolors
+  </div>
+</script>
+<script type="module">
+  document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+  import {gallery} from './gallery.js'
+  import {items} from './data.js';
+  const inner = gallery(items, {lang: 'en'});
+  const htmlElement = document.createElement('div');
+  htmlElement.innerHTML = inner;
+  display(htmlElement);
+</script>
+</notebook>

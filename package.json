@@ -1,0 +1,29 @@
+{
+  "name": "aqua",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:preview": "notebooks preview --root src --template src/template.html",
+    "docs:build": "notebooks build --root src --template src/template.html -o ../docs -- src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drom/aqua.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drom/aqua/issues"
+  },
+  "homepage": "https://github.com/drom/aqua#readme",
+  "devDependencies": {
+    "@fontsource-variable/roboto-slab": "^5.2.8",
+    "@observablehq/notebook-kit": "^1.4.1",
+    "onml": "^2.1.0"
+  }
+}

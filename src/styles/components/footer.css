@@ -1,0 +1,69 @@
+/**
+ * Footer Component Styles
+ * Site footer with copyright and info
+ */
+
+/* === Site Footer === */
+.site-footer {
+    padding: var(--spacing-lg) 0;
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.copyright {
+    font-size: var(--font-size-sm);
+}
+
+.tech-note {
+    font-size: var(--font-size-xs);
+    opacity: 0.7;
+}
+
+.tech-note a {
+    color: var(--color-text-inverse);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.tech-note a:hover {
+    opacity: 0.8;
+}
+
+/* === Social Links (if needed) === */
+.social-links {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-2);
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-full);
+    background: var(--color-border-light-inverse);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    background: var(--color-border-medium-inverse);
+    transform: translateY(-2px);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: var(--spacing-md) 0;
+    }
+}

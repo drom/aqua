@@ -1,0 +1,18 @@
+/* body {
+  font-family: 'roboto slab';
+} */
+
+@import url('variables.css');
+
+@import url('base.css');
+
+@import url('layout.css');
+
+@import url('components/header.css');
+@import url('components/gallery.css');
+@import url('components/lightbox.css');
+@import url('components/blog.css');
+@import url('components/footer.css');
+@import url('components/about.css');
+
+@import url('themes/dark-mode.css');

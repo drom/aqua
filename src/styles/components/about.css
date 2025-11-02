@@ -1,0 +1,124 @@
+/**
+ * About & Contacts Component Styles
+ * About section and contact information
+ */
+
+/* === About Section === */
+.about-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.about-content {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-loose);
+}
+
+.about-content p {
+    margin-bottom: var(--spacing-md);
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* === Contacts Section === */
+.contacts-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-bg-alt);
+}
+
+.contacts-content {
+    max-width: var(--narrow-max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-item {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item h3 {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-secondary);
+}
+
+.contact-item a {
+    font-size: var(--font-size-lg);
+    color: var(--color-accent);
+    font-weight: var(--font-weight-medium);
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* === Contact Methods === */
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-md);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-4);
+    background: var(--color-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.contact-method:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    font-size: var(--font-size-3xl);
+    color: var(--color-accent);
+}
+
+.contact-details {
+    text-align: left;
+}
+
+.contact-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    display: block;
+    margin-bottom: var(--spacing-1);
+}
+
+.contact-value {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .about-content {
+        font-size: var(--font-size-base);
+    }
+
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-details {
+        text-align: center;
+    }
+}

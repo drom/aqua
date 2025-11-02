@@ -1,0 +1,101 @@
+/**
+ * Dark Mode Theme
+ * Overrides default theme colors while maintaining design consistency
+ */
+
+[data-theme='dark'] {
+    /* === Dark Theme Colors === */
+    --theme-bg-primary: #1a202c;
+    --theme-bg-secondary: #2d3748;
+    --theme-bg-tertiary: #4a5568;
+
+    --theme-text-primary: #f7fafc;
+    --theme-text-secondary: #e2e8f0;
+    --theme-text-tertiary: #cbd5e0;
+
+    --theme-border-light: #4a5568;
+    --theme-border-medium: #718096;
+    --theme-border-dark: #a0aec0;
+
+    --theme-shadow-sm: rgba(0, 0, 0, 0.2);
+    --theme-shadow-md: rgba(0, 0, 0, 0.3);
+    --theme-shadow-lg: rgba(0, 0, 0, 0.4);
+
+    --theme-overlay: rgba(0, 0, 0, 0.85);
+    --theme-overlay-light: rgba(0, 0, 0, 0.6);
+
+    /* Adjust primary colors for dark mode */
+    --color-primary: var(--color-primary-300);
+    --color-secondary: var(--color-secondary-300);
+
+    /* Semantic colors - automatically inherit from theme colors */
+    --color-text: var(--theme-text-primary);
+    --color-text-light: var(--theme-text-secondary);
+    --color-text-muted: var(--theme-text-tertiary);
+
+    --color-bg: var(--theme-bg-primary);
+    --color-bg-alt: var(--theme-bg-secondary);
+    --color-bg-tertiary: var(--theme-bg-tertiary);
+
+    --color-border: var(--theme-border-light);
+    --color-border-medium: var(--theme-border-medium);
+
+    --color-shadow-sm: var(--theme-shadow-sm);
+    --color-shadow-md: var(--theme-shadow-md);
+    --color-shadow-lg: var(--theme-shadow-lg);
+
+    --color-overlay: var(--theme-overlay);
+    --color-overlay-light: var(--theme-overlay-light);
+}
+
+/* Adjust specific components for better dark mode visibility */
+[data-theme='dark'] .gallery-item-inner {
+    background: var(--theme-bg-tertiary);
+}
+
+[data-theme='dark'] .filter-btn {
+    background: var(--theme-bg-secondary);
+    border-color: var(--theme-border-medium);
+}
+
+[data-theme='dark'] .filter-btn:hover {
+    background: var(--theme-bg-tertiary);
+}
+
+[data-theme='dark'] .blog-post-card {
+    background: var(--theme-bg-secondary);
+    box-shadow: 0 4px 6px -1px var(--color-shadow-md);
+}
+
+[data-theme='dark'] .site-header {
+    border-bottom-color: var(--theme-border-light);
+}
+
+[data-theme='dark'] .site-header.scrolled {
+    box-shadow: 0 2px 10px var(--color-shadow-md);
+}
+
+[data-theme='dark'] .year-select {
+    background: var(--theme-bg-secondary);
+    border-color: var(--theme-border-medium);
+    color: var(--theme-text-primary);
+}
+
+/* Smooth transition when switching themes */
+* {
+    transition: background-color var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base);
+}
+
+/* Preserve image transitions and transforms */
+img,
+.gallery-image,
+.lightbox-image {
+    transition: transform var(--transition-slow);
+}
+
+/* Preserve hover effects */
+.gallery-item {
+    transition: transform var(--transition-slow);
+}
